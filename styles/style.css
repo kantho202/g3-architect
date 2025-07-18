@@ -233,10 +233,13 @@ footer p {
     .features,
     .sponsor-image,
     .feature-container,
-    .navbar {
+    .navbar ,
+    .nav-links {
         flex-direction: column;
     }
-
+     .nav-item{
+        margin-bottom: 10px;
+    }
     .brand {
         text-align: center;
     }
@@ -269,4 +272,50 @@ footer p {
         margin-left: 20px;
         margin: 50px 0;
     }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .features,
+    .sponsor-image,
+    .feature-container,
+    .navbar ,
+    .nav-links
+    {
+        flex-direction: column;
+    }
+    .nav-item{
+        margin-bottom: 10px;
+    }
+    .brand {
+        text-align: center;
+    }
+     .feature-image {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-title {
+        margin-top: 20px;
+    }
+
+    .facts-box,
+    .sponsor-image {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .some-fact,
+    .feature-contain {
+        margin-left: 20px;
+    }
+
+    .feature-love-image img {
+        width: 100%;
+    }
+
+    #btn-featues-button {
+        margin-left: 20px;
+        margin: 50px 0;
+    }
+
+
 }
